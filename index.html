@@ -9,12 +9,32 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            background-image: url('1.webp'); /* 设置背景图片 */
+            background-size: cover;
+            color: white; /* 设置字体颜色为白色 */
         }
         button {
             margin: 10px;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #add8e6; /* 淡蓝色背景 */
+            border: none;
+            border-radius: 5px;
+            color: white; /* 按钮字体颜色为白色 */
+        }
+        button:hover {
+            background-color: #87ceeb; /* 鼠标悬停时的更深蓝色 */
+        }
+        em {
+            color: white; /* 保持 footer 字体颜色为白色 */
+        }
+        a {
+            color: white; /* 保持链接字体颜色为白色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+        a:hover {
+            text-decoration: underline; /* 鼠标悬停时显示下划线 */
         }
     </style>
 </head>
@@ -23,12 +43,12 @@
 	
     <h2>随机ba图片</h2>
 	<button onclick="copyToClipboard('http://ba.ikgy.top')">php</button>
-    <button onclick="copyToClipboard('http:/ba.ikgy.top/api.js')">国内js</button>
+    <button onclick="copyToClipboard('http://ba.ikgy.top/api.js')">国内js</button>
     <button onclick="copyToClipboard('https://apitp.netlify.app/js/api.js')">国外js-github分流</button>
 	
 	<h2>docker镜像站</h2>
 	<button onclick="copyToClipboard('http://ba.ikgy.top')">维护中...</button>
-	<button onclick="copyToClipboard('http://ba.ikgy.top')">敬请期待</button></br><em>Powered by<a href="www.ikgy.top">ik公益</a></em>
+	<button onclick="copyToClipboard('http://ba.ikgy.top')">敬请期待</button><br><em>Powered by <a href="http://www.ikgy.top">ik公益</a></em>
 
     <script>
         function copyToClipboard(text) {
